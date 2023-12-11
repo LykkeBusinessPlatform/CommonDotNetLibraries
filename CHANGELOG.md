@@ -1,4 +1,4 @@
-## [[tbd]] (2023-12-11)
+## 8.2.0 (2023-12-11)
 
 ### Changed 
 - LT-5112: Microsoft.ApplicationInsights updated to v2.22.0
