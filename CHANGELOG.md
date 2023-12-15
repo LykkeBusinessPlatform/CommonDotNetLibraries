@@ -1,4 +1,4 @@
-## [[tbd]] (2023-12-15)
+## 8.3.0 (2023-12-15)
 
 ### Added
 - LT-5128: Add `Single` extensions methods for `IEnumerable` with details description in case of failures 
