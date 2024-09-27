@@ -13,6 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lykke.Common", "src\Lykke.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Tests", "tests\Common.Tests\Common.Tests.csproj", "{67F87E5A-FDA9-4439-895E-F7E23F2BF9E6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{6122D55D-A585-41F9-B95B-17B6BECCA11B}"
+    ProjectSection(SolutionItems) = preProject
+        .editorconfig = .editorconfig
+        .gitignore = .gitignore
+        .gitattributes = .gitattributes
+        CHANGELOG.md = CHANGELOG.md
+        LICENSE = LICENSE
+        README.md = README.md
+        global.json = global.json
+    EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
