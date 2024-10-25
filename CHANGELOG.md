@@ -1,4 +1,4 @@
-## [[tbd]] ([[date]])
+## 9.0.0 (2024-10-25)
 
 ### Changed
 - LT-5836: Remove stale packages and update other dependencies
