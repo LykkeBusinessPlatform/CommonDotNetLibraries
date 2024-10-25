@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Common.Log;
 using System.Reflection;
-using MoreLinq;
 
 namespace Common
 {
@@ -597,31 +596,6 @@ namespace Common
             return result.ToArray();
         }
 
-        [Obsolete("Use MoreLinq " + nameof(MoreEnumerable.Batch) + " method")]
-        public static IEnumerable<IEnumerable<T>> ToPieces<T>(this IEnumerable<T> src, int countInPicese)
-        {
-            return src.Batch(countInPicese);
-        }
-
-        [Obsolete("Use Enumerable " + nameof(Enumerable.Take) + " method")]
-        public static IEnumerable<T> Limit<T>(this IEnumerable<T> src, int limit)
-        {
-            return src.Take(limit);
-        }
-
-        [Obsolete("Use Enumerable " + nameof(Enumerable.Range) + " method")]
-        public static IEnumerable<int> GenerateInts(int from, int to)
-        {
-            return Enumerable.Range(from, to - from + 1);
-        }
-
-        [Obsolete("Use Dictionary constructor")]
-        public static Dictionary<TKey, TValue> CloneDictionary<TKey, TValue>(this Dictionary<TKey, TValue> src)
-        {
-            var result = new Dictionary<TKey, TValue>(src);
-            return result;
-        }
-
         public static Dictionary<TKey, Dictionary<TKey2, TValue>> CloneDoubleDictionary<TKey, TKey2, TValue>(this Dictionary<TKey, Dictionary<TKey2, TValue>> src)
         {
             var result = new Dictionary<TKey, Dictionary<TKey2, TValue>>();
@@ -751,18 +725,6 @@ namespace Common
             }
 
             return -1;
-        }
-
-        [Obsolete("Use MoreLinq " + nameof(MoreEnumerable.Slice) + " extension method")]
-        public static IEnumerable<T> CutFrom<T>(this IEnumerable<T> src, int from, int length)
-        {
-            return src.Slice(from, length);
-        }
-
-        [Obsolete("Use MoreLinq " + nameof(MoreEnumerable.Batch) + " extension method")]
-        public static IEnumerable<IEnumerable<T>> ToChunks<T>(this IEnumerable<T> src, int chunkSize)
-        {
-            return src.Batch(chunkSize);
         }
 
         public static IPEndPoint ParseIpEndPoint(this string src)

@@ -228,7 +228,7 @@ namespace Common
 
             while (i != -1)
             {
-                var str = Encoding.ASCII.GetString(_buffer.CutFrom(0, i).ToArray());
+                var str = Encoding.ASCII.GetString(_buffer.Take(i).ToArray());
                 yield return str;
                 _buffer.RemoveRange(0, i + _separator.Length);
                 i = _buffer.IndexOf(_separator);
