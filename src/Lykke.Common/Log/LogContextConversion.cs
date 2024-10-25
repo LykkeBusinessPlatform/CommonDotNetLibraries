@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using AsyncFriendlyStackTrace;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -58,7 +57,7 @@ namespace Lykke.Common.Log
             {
                 try
                 {
-                    Console.WriteLine(ex.ToAsyncString());
+                    Console.WriteLine(ex.ToString());
                 }
                 // ReSharper disable once EmptyGeneralCatchClause
                 catch

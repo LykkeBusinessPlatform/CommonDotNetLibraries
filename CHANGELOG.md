@@ -1,3 +1,8 @@
+## [[tbd]] ([[date]])
+
+### Changed
+- LT-5836: Remove stale packages and update other dependencies
+
 ## 8.4.0 (2024-09-27)
 
 ### Changed
